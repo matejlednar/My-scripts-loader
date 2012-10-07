@@ -3,7 +3,7 @@ My Scripts Loader
 
 Author: Matej Lednár
 
-My Script Loader contains:
+My Scripts Loader contains:
 
 - SC loader (Simple Scripts Loader)
 - SMD Loader (Synchronous Module Definition Loader) 
