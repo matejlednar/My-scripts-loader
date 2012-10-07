@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Single Script Loader</title>
+    <meta charset="utf-8">
+    <meta name="author" content="PhDr. Matej Lednár, PhD."/>
+  </head>
+  <body>
+    <h1>Simple Scripts Loader demo</h1>
+    <h2>Author: Matej Lednár</h2>
+    <h3>Single script loader</h3>
+
+    <section>
+      <section id="insert1"></section>
+    </section>
+
+    <script>
+      
+      function loadScript(files) {
+        
+        function isArray(Obj) {
+          return ({}).toString.call(Obj).match(/\s([a-zA-Z]+)/)[1] == "Array";
+        }
+        
+        function loadFile(file) {
+          
+          var scriptElement = document.createElement("script");
+          scriptElement.src = file;
+          
+          var target = document.getElementsByTagName("head")[0];
+          target.appendChild(scriptElement);
+        }
+        
+        if (isArray(files)) {
+        
+          var numberOfFiles = files.length;
+
+          for (var i = 0; i < numberOfFiles; i++) {
+            loadFile(files[i]);
+          }
+        }
+        
+        else {
+          loadFile(files);
+        }
+        
+      }
+
+      loadScript("file-1.js");
+      
+    </script>
+  </body>
+</html>
