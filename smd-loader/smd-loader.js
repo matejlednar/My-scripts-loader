@@ -1,3 +1,5 @@
+// Author: Matej Lednár
+
 function require(files, callback) {
 
   // sync script loader
