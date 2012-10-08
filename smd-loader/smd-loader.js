@@ -26,7 +26,7 @@ function require(files, callback) {
           
     // checks number of loaded files
     if (isLast) {
-      // invoke callback with loaded objects/functions
+      // invoke callback with loaded objects / functions / primitive values
       callback.apply({}, result);
     }
   }
