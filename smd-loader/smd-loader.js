@@ -21,7 +21,7 @@ function require(files, callback) {
     // transformation to JS
     eval("fileSource = " + loadScript(file));
           
-    // saves results (objects or functions)
+    // saves results (objects, functions, primitive values)
     result.push(fileSource());
           
     // checks number of loaded files

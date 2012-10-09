@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Load - script element</title>
+    <title>Synchronous Module Definition Loader demo</title>
     <meta charset="utf-8">
     <meta name="author" content="PhDr. Matej Lednár, PhD."/>
   </head>
@@ -37,7 +37,7 @@
           // transformation to JS
           eval("fileSource = " + loadScript(file));
           
-          // saves results (objects or functions) 
+          // saves results (objects, functions, primitive values)
           result.push(fileSource());
           
           // checks number of loaded files
