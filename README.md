@@ -1,5 +1,4 @@
-My Scripts Loader 
-=================
+# My Scripts Loader 
 
 Author: Matej Lednár
 
